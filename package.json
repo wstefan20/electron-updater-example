@@ -3,7 +3,7 @@
   "version": "0.7.1",
   "main": "main.js",
   "description": "electron-updater example project",
-  "author": "Matt Haggard",
+  "author": "Stefan Wagner",
   "scripts": {
     "publish": "build -p always"
   },
@@ -16,7 +16,7 @@
     "electron-updater": "^4.0.6"
   },
   "build": {
-    "appId": "com.github.iffy.electronupdaterexample",
+    "appId": "com.github.wstefan20.electronupdaterexample",
     "mac": {
       "category": "your.app.category.type",
       "target": [
