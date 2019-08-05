@@ -109,9 +109,9 @@ app.on('window-all-closed', () => {
 // This will immediately download an update, then install when the
 // app quits.
 //-------------------------------------------------------------------
-app.on('ready', function()  {
-  autoUpdater.checkForUpdatesAndNotify();
-});
+//app.on('ready', function()  {
+  //autoUpdater.checkForUpdatesAndNotify();
+//});
 
 //-------------------------------------------------------------------
 // Auto updates - Option 2 - More control
@@ -124,19 +124,19 @@ app.on('ready', function()  {
 // Uncomment any of the below events to listen for them.  Also,
 // look in the previous section to see them being used.
 //-------------------------------------------------------------------
-// app.on('ready', function()  {
-//   autoUpdater.checkForUpdates();
-// });
-// autoUpdater.on('checking-for-update', () => {
-// })
-// autoUpdater.on('update-available', (info) => {
-// })
-// autoUpdater.on('update-not-available', (info) => {
-// })
-// autoUpdater.on('error', (err) => {
-// })
-// autoUpdater.on('download-progress', (progressObj) => {
-// })
-// autoUpdater.on('update-downloaded', (info) => {
-//   autoUpdater.quitAndInstall();  
-// })
+ app.on('ready', function()  {
+   autoUpdater.checkForUpdates();
+ });
+ autoUpdater.on('checking-for-update', () => {
+ })
+ autoUpdater.on('update-available', (info) => {
+ })
+ autoUpdater.on('update-not-available', (info) => {
+ })
+ autoUpdater.on('error', (err) => {
+ })
+ autoUpdater.on('download-progress', (progressObj) => {
+ })
+ autoUpdater.on('update-downloaded', (info) => {
+   autoUpdater.quitAndInstall();  
+ })
